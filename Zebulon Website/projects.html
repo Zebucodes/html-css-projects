@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Projects</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    /* NAVBAR */
+    nav {
+      background-color: black;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* PROJECT CARDS USING FLEXBOX */
+    .projects-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+
+    .card {
+      background: white;
+      width: 280px;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div><strong>ZEBU.</strong></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PROJECT CARDS -->
+  <section class="projects-container">
+    <div class="card">
+      <img src="images/project1.jpg" alt="Project 1">
+      <h3>Website 1</h3>
+      <p>A simple website I built using HTML & CSS.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/project2.jpg" alt="Project 2">
+      <h3>Website 2</h3>
+      <p>Practicing Flexbox layouts and responsive design.</p>
+    </div>
+
+    <div class="card">
+      <img src="images/project3.jpg" alt="Project 3">
+      <h3>Website 3</h3>
+      <p>Experimenting with clean modern UI.</p>
+    </div>
+  </section>
+</body>
+</html>

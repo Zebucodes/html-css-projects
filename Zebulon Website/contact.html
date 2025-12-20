@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+    }
+
+    /* NAVBAR */
+    nav {
+      background-color: black;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* CONTACT SECTION (center using flexbox) */
+    .contact-section {
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      text-align: center;
+      color: black;
+    }
+
+    .contact-card {
+      background: white;
+      padding: 25px;
+      width: 320px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .contact-card h2 {
+      margin: 0 0 10px;
+    }
+
+    .contact-card p {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div><strong>ZEBU.</strong></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="contact-card">
+      <h2>Contact Me</h2>
+      <p><strong>Phone:</strong> +254 705 633 704</p>
+      <p><strong>Email:</strong> zebulonndirangu@gmail.com</p>
+      <p><strong>Location:</strong> Nairobi, Kenya</p>
+    </div>
+  </section>
+
+</body>
+</html>
